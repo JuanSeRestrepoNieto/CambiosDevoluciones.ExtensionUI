@@ -1,0 +1,14 @@
+api_version = "2026-07"
+
+[[extensions]]
+name = "t:name"
+handle = "customer-account-returns"
+type = "ui_extension"
+
+[[extensions.targeting]]
+module = "./src/MenuActionItem.jsx"
+target = "customer-account.order.action.menu-item.render"
+
+[[extensions.targeting]]
+module = "./src/OrderFullPage.jsx"
+target = "customer-account.order.page.render"

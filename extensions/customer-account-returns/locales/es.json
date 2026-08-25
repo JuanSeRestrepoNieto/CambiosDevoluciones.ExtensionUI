@@ -1,0 +1,15 @@
+{
+  "name": "Cambios y Devoluciones",
+  "menu_button": "Cambios y devoluciones",
+  "wizard": {
+    "title": "Cambios y Devoluciones",
+    "subheading": "Gestiona tu solicitud de cambio o devolución",
+    "select_items": "Selecciona los productos a devolver",
+    "select_type": "Selecciona el tipo de solicitud",
+    "resolution": "Resolución",
+    "logistics": "Logística",
+    "review": "Revisar solicitud",
+    "submit": "Enviar solicitud",
+    "success": "Solicitud enviada con éxito"
+  }
+}

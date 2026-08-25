@@ -1,0 +1,15 @@
+{
+  "name": "Returns & Exchanges",
+  "menu_button": "Changes & returns",
+  "wizard": {
+    "title": "Changes and Returns",
+    "subheading": "Manage your order return or exchange request",
+    "select_items": "Select items to return",
+    "select_type": "Select request type",
+    "resolution": "Resolution",
+    "logistics": "Logistics",
+    "review": "Review request",
+    "submit": "Submit request",
+    "success": "Request submitted successfully"
+  }
+}
