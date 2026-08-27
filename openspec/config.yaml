@@ -1,20 +1,52 @@
-schema: spec-driven
-
-# Project context (optional)
-# This is shown to AI when creating artifacts.
-# Add your tech stack, conventions, style guides, domain knowledge, etc.
-# Example:
-#   context: |
-#     Tech stack: TypeScript, React, Node.js
-#     We use conventional commits
-#     Domain: e-commerce platform
-
-# Per-artifact rules (optional)
-# Add custom rules for specific artifacts.
-# Example:
-#   rules:
-#     proposal:
-#       - Keep proposals under 500 words
-#       - Always include a "Non-goals" section
-#     tasks:
-#       - Break tasks into chunks of max 2 hours
+strict_tdd: true
+context: |
+  app-home is a Node.js/TypeScript project.
+  Detected markers: package.json, pnpm package manager, extensions\app-home/package.json, extensions\app-home/tsconfig.json, extensions\app-home/npm package manager, extensions\app-tools/package.json, extensions\app-tools/tsconfig.json, extensions\app-tools/npm package manager, extensions\customer-account-order-actions/package.json, extensions\customer-account-order-actions/tsconfig.json, extensions\customer-account-order-actions/npm package manager, extensions\customer-account-order-full-page/package.json, extensions\customer-account-order-full-page/tsconfig.json, extensions\customer-account-order-full-page/npm package manager.
+  Package managers: pnpm, npm.
+  No reliable test runner was detected; verify testing manually before enabling strict TDD.
+  Unit tests: none.
+  Integration tests: none.
+  E2E tests: none.
+rules:
+  proposal:
+    require_problem_statement: true
+  spec:
+    require_acceptance_criteria: true
+  design:
+    require_tradeoffs: true
+  tasks:
+    protect_review_workload: true
+  apply:
+    test_command: ""
+  verify:
+    test_command: ""
+testing:
+  detected: "2026-08-27"
+  runner:
+    command: ""
+    framework: ""
+  layers:
+    unit: ""
+    integration: ""
+    e2e: ""
+  commands:
+    unit:
+      []
+    integration:
+      []
+    e2e:
+      []
+  coverage:
+    command: ""
+    commands:
+      []
+quality:
+  lint: ""
+  lint_commands:
+    []
+  typecheck: ""
+  typecheck_commands:
+    []
+  format: ""
+  format_commands:
+    []

@@ -1,0 +1,11 @@
+api_version = "2026-07"
+
+[[extensions]]
+name = "Customer account order full page"
+handle = "customer-account-order-full-page"
+uid = "26e96e0d-48ee-30da-50d2-9d63306ab95dba3eee9f"
+type = "ui_extension"
+
+[[extensions.targeting]]
+module = "./src/OrderFullPage.jsx"
+target = "customer-account.order.page.render"

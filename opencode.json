@@ -1,20 +1,10 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "instructions": [
-    "AGENTS.md",
-    ".opencode/instructions/shopify-source-of-truth.md",
-    ".opencode/instructions/shopify-security.md",
-    ".opencode/instructions/shopify-validation.md"
-  ],
   "default_agent": "postventa-architect",
   "mcp": {
     "shopify-dev-mcp": {
       "type": "local",
-      "command": [
-        "npx",
-        "-y",
-        "@shopify/dev-mcp@latest"
-      ]
+      "command": ["npx", "-y", "@shopify/dev-mcp@latest"]
     }
   }
 }

@@ -1,0 +1,29 @@
+api_version = "2026-07"
+
+[[extensions]]
+name = "Customer account order actions"
+handle = "customer-account-order-actions"
+uid = "bb3e15ee-9d1a-72a3-57fd-d7a77e11197572d8b90e"
+type = "ui_extension"
+
+# GATED ENTRYPOINT: renders below the order lines on the order status page.
+# Full OrderStatusApi & StandardApi: order GID, appMetafields, i18n.
+[[extensions.targeting]]
+module = "./src/OrderStatusPostventa.jsx"
+target = "customer-account.order-status.cart-line-list.render-after"
+
+# Read-only metafield request: hydrates the Monitor-owned order metafield
+# (namespace crystal, key cambios_devoluciones_ticket) into shopify.appMetafields.
+[[extensions.targeting.metafields]]
+namespace = "crystal"
+key = "cambios_devoluciones_ticket"
+
+# FAIL-CLOSED (no per-order data on the index target in 2026-07; design D1).
+[[extensions.targeting]]
+module = "./src/PostventaNoop.jsx"
+target = "customer-account.order-index.block.render"
+
+# FAIL-CLOSED (orderId-only OrderApi; no metafield/fulfillment access; design D2).
+[[extensions.targeting]]
+module = "./src/PostventaNoop.jsx"
+target = "customer-account.order.action.menu-item.render"

@@ -36,3 +36,5 @@ shared/types/graphql
 *.sw?
 
 .opencode
+# Local Pi runtime state
+.atl/
