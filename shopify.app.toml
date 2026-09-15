@@ -2,7 +2,7 @@
 
 client_id = "a2effd6e5f0b65cf045fe61002b0d1db"
 name = "CambiosDevolucionesExtensionUI"
-application_url = "https://az-wa-cambios-shopify-ui-c0augxbxembzhnhs.eastus-01.azurewebsites.net"
+application_url = "https://cambiosdevoluciones-extensionui.onrender.com"
 embedded = true
 
 [build]
@@ -20,7 +20,7 @@ embedded_app_direct_api_access = true
 scopes = "write_products"
 
 [auth]
-redirect_urls = [ "https://az-wa-cambios-shopify-ui-c0augxbxembzhnhs.eastus-01.azurewebsites.net/api/auth" ]
+redirect_urls = [ "https://cambiosdevoluciones-extensionui.onrender.com/api/auth" ]
 
 [metaobjects.app.faq]
 name = "FAQ"
